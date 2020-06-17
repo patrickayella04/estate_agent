@@ -1,0 +1,90 @@
+/* Global*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: auto; 
+}
+/* Top navigation bar*/
+.top-nav-content li {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+    /* padding-right: 30px ; */
+    padding: 15px 10px 15px 40px;
+    color: #ffffff;
+    font-size: 0.8em;
+    font-family: sans-serif;
+}
+.top-nav {
+    background-color: #1e1130;
+}
+.log-in {
+    float: right;
+    position: relative;
+    left: 30px
+}
+.country-option {
+    float: right;
+    position: relative;
+    left: 30px
+}
+.arrow-dropdown {
+    float: right;
+}
+.jack-flag {
+    float: right;
+    position: relative;
+    left: 60px;
+}
+.can {
+    float: right;
+    position: relative;
+    left: 15em;
+    font-size: 0.8em;
+    padding: 5px 15px 5px 10px;
+    box-shadow: 0 0 5px 0;
+    /* display: none; */
+    
+}
+.can-flag {
+    padding-right: 10px;
+}
+
+@media (max-width: 1023px) {
+    .top-nav, .can {
+        display: none;
+    }
+    .log-in, .jack-flag, .country-option, .arrow-dropdown {
+        position: relative;
+        left: 10px
+    }
+    .can {
+        position: relative;
+        left: 10em;
+    }
+
+}
+@media (max-width: 1110px) {
+    .top-nav-content li {
+        padding: 15px 10px 15px 20px;
+        font-size: 0.8em;
+    }
+    .log-in, .jack-flag, .country-option {
+        position: relative;
+        left: 10px
+    }
+    .arrow-dropdown {
+        position: relative;
+        left: 0
+    }
+    .can {
+        position: relative;
+        left: 10em
+    }
+}
+
+
