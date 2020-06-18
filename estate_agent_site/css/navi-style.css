@@ -41,18 +41,22 @@
     left: 60px;
 }
 .can {
+    
     float: right;
     position: relative;
     left: 15em;
     font-size: 0.8em;
     padding: 5px 15px 5px 10px;
     box-shadow: 0 0 5px 0;
-    /* display: none; */
-    
+    display: none;
+}
+.can.show {
+    display: block;
 }
 .can-flag {
     padding-right: 10px;
 }
+
 
 @media (max-width: 1023px) {
     .top-nav, .can {
@@ -68,7 +72,7 @@
     }
 
 }
-@media (max-width: 1110px) {
+@media (max-width: 1130px) {
     .top-nav-content li {
         padding: 15px 10px 15px 20px;
         font-size: 0.8em;
