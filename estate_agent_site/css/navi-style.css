@@ -73,31 +73,69 @@
     background-color: #1e1130;
 }
 /*
-Hamburger menue - test build
-
+Hamburger menue - test build*/
+#toggle {
+    visibility: hidden;
+}
 label.navi-toggle {
     
-    width: 14px;
+    width: 17px;
     height: 1.4px;
     background-color: #ffffff;
     cursor: pointer;
+    margin-top: 6px;
+
+
 }
-label.navi-toggle ::before {
+
+label.navi-toggle::after {
     
     content: "";
-    width: 14px;
+    width: 17px;
     height: 1.4px;
     background-color: #ffffff;
     display: block;
+    left: 0;
+    margin-top: 11px; 
     cursor: pointer;
+
+    transform-origin: left bottom; /* 2. */
+    transform:rotateZ(0deg);/* 3. */
+
+
 }
-label.navi-toggle ::before {
-    margin-top: 2px;
-    
-    margin-left: 0%;
-} */
+label.navi-toggle::before {
+    content: "";
+    width: 17px;
+    height: 1.4px;
+    background-color: #ffffff;
+    display: block;
+    left: 0;
+    margin-top: -6px;
+    cursor: pointer;
 
+    transform-origin: left top; /* 2. */
+    transform:rotateZ(0deg);/* 3. */
+} 
 
+#toggle:checked ~ label.navi-toggle::before { 
+    /* background-color: #ff0000; */
+    /* transform: rotateZ(41deg); */
+    transform: rotateZ(45deg); /* 1. How to create in order the animation of the hamburger to an X close btn.*/
+} 
+
+/* (~) selects the siblings of the element - thus once the checkbox is checked its sibiling element which is the label will change according to what css style you choose*/
+
+#toggle:checked ~ label.navi-toggle::after {
+    /* background-color: #ff0000; */
+    transform: rotateZ(-45deg); /* 1. */
+}
+#toggle:checked ~ label.navi-toggle {
+    background-color: #1e1130;
+}
+
+/*
+Hamburger menue - test build - end */
 @media (max-width: 1023px) {
     .top-nav, .can {
         display: none;
