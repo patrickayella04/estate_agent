@@ -14,7 +14,7 @@
     text-decoration: none;
     list-style-type: none;
     /* padding-right: 30px ; */
-    padding: 15px 10px 15px 40px;
+    padding: 15px 10px 15px 30px;
     color: #ffffff;
     font-size: 0.8em;
     font-family: sans-serif;
@@ -30,10 +30,12 @@
 .country-option {
     float: right;
     position: relative;
-    left: 30px;
+    left: 40px;
 }
 .arrow-dropdown {
     float: right;
+    position: relative;
+    margin-left: 20px;
 }
 .jack-flag {
     float: right;
@@ -46,19 +48,54 @@
 .can {
     float: right;
     position: relative;
-    left: 15em;
+    /* left: 15em;  when toggle box disapears*/
+    left: 5em;
     font-size: 0.8em;
-    padding: 5px 15px 5px 10px;
+    /* padding: 5px 15px 5px 10px; */
     box-shadow: 0 0 5px 0;
     display: none;
+    /*Transition constrol of appearance*/
 }
 .can.show {
+    /*Transition constrol of appearance of canada flag*/
     display: block;
 } 
 .can-flag {
     padding-right: 10px;
 }
+.can-word {
+    border: none;
+    outline: none;
+    padding: 5px 15px 5px 10px;
+}
+.can-word:hover {
+    color: #ffffff;
+    background-color: #1e1130;
+}
+/*
+Hamburger menue - test build
 
+label.navi-toggle {
+    
+    width: 14px;
+    height: 1.4px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+label.navi-toggle ::before {
+    
+    content: "";
+    width: 14px;
+    height: 1.4px;
+    background-color: #ffffff;
+    display: block;
+    cursor: pointer;
+}
+label.navi-toggle ::before {
+    margin-top: 2px;
+    
+    margin-left: 0%;
+} */
 
 
 @media (max-width: 1023px) {
@@ -71,7 +108,8 @@
     }
     .can {
         position: relative;
-        left: 10em;
+        /* left: 10em;  when toggle box disapears*/
+        
     }
 
 }
@@ -90,8 +128,9 @@
     }
     .can {
         position: relative;
-        left: 10em;
+        /* left: 10em;  when toggle box disapears*/
     }
+    
 }
 
 
