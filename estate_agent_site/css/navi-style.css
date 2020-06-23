@@ -30,6 +30,7 @@ Using css variabls, we use double dash to create the variable name and apply the
 }
 .top-nav {
     background-color: #1e1130;
+    z-index: 1;
 }
 .log-in {
     float: right;
@@ -69,14 +70,18 @@ Using css variabls, we use double dash to create the variable name and apply the
 .can.show {
     /*Transition constrol of appearance of canada flag*/
     display: block;
+    
+    z-index: 1;
 } 
 .can-flag {
     padding-right: 10px;
+    z-index: 1;
 }
 .can-word {
     border: none;
     outline: none;
     padding: 5px 15px 5px 10px;
+    z-index: 1;
 }
 .can-word:hover {
     color: #ffffff;
@@ -150,13 +155,34 @@ label.navi-toggle::before {
 /*
 Hamburger menue - test build - end */
 
-
+.show-casepicture {
+    height: 90vh;
+    background-image: url(../img/homefinal.jpg);
+}
 
 /*drop-navi*/
 .drop-navi {
     height: 80px;
-    background-color: red;
+    /* background-color: red; */
+    
+    z-index: 0;
 }
+.drop-navi ul {
+    display: flex;
+    float: right;
+    margin-top: 30px;
+    list-style: none;
+    font-size: 1.5em;
+    
+   
+}
+.drop-navi li {
+    padding-left: 90px;
+    
+    
+    
+}
+
 /*drop-navi*/
 
 
