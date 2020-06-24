@@ -96,7 +96,7 @@ Using css variabls, we use double dash to create the variable name and apply the
     width: 100%;
     background-color: #ffffff;
     top: 55px;
-    z-index: -1;
+    z-index: 0;
 }
 .drop-navi ul {
     display: flex;
