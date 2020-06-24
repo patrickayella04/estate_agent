@@ -30,7 +30,7 @@ Using css variabls, we use double dash to create the variable name and apply the
 }
 .top-nav {
     background-color: #1e1130;
-    z-index: 1;
+    position: relative;
 }
 .log-in {
     float: right;
@@ -56,39 +56,91 @@ Using css variabls, we use double dash to create the variable name and apply the
     cursor: pointer;
 }
 .can {
-    float: right;
-    position: relative;
+    /* float: right; */
+    /* position: relative; */
     /* left: 15em;  when toggle box disapears*/
-    left: 5em;
+    
     font-size: 0.8em;
     /* padding: 5px 15px 5px 10px; */
     box-shadow: 0 0 5px 0;
-    display: none;
-    /*Transition constrol of appearance*/
-    z-index: 1;
+    display: none;/*Transition constrol of appearance*/
+    position: absolute;
+    left: 90%;
+    
+   
 }
 .can.show {
     /*Transition constrol of appearance of canada flag*/
     display: block;
     
     z-index: 1;
+    
+   
 } 
 .can-flag {
     padding-right: 10px;
-    z-index: 1;
+    
 }
 .can-word {
     border: none;
     outline: none;
     padding: 5px 15px 5px 10px;
-    z-index: 1;
+   
 }
 .can-word:hover {
     color: #ffffff;
     background-color: #1e1130;
 }
-/*
-Hamburger menue - test build*/
+
+/*drop-navi*/
+.drop-navi {
+    height: 80px;
+    
+    
+   
+}
+.drop-navi ul {
+    display: flex;
+    float: right;
+    margin-top: 20px;
+    list-style: none;
+    font-size: 1.3em;
+    position: relative;
+    left: 60px;
+}
+.drop-navi li {
+    padding-left: 90px;
+}
+/*drop-navi*/
+
+/*input of find property */
+.find-prop {
+    
+}
+.area-prop, .submit-prop {
+    padding: 10px;
+}
+
+.submit-prop {
+    background-color: #1e1130 ;
+    color: #ffffff;
+}
+
+/*input of find property end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Hamburger menue - test build*/
 #toggle {
     visibility: hidden;
 }
@@ -160,30 +212,7 @@ Hamburger menue - test build - end */
     background-image: url(../img/homefinal.jpg);
 }
 
-/*drop-navi*/
-.drop-navi {
-    height: 80px;
-    /* background-color: red; */
-    
-    z-index: 0;
-}
-.drop-navi ul {
-    display: flex;
-    float: right;
-    margin-top: 30px;
-    list-style: none;
-    font-size: 1.5em;
-    
-   
-}
-.drop-navi li {
-    padding-left: 90px;
-    
-    
-    
-}
 
-/*drop-navi*/
 
 
 
