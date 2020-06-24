@@ -22,7 +22,6 @@ Using css variabls, we use double dash to create the variable name and apply the
     display: inline-flex;
     text-decoration: none;
     list-style-type: none;
-    /* padding-right: 30px ; */
     padding: 15px 10px 15px 30px;
     color: #ffffff;
     font-size: 0.8em;
@@ -30,8 +29,42 @@ Using css variabls, we use double dash to create the variable name and apply the
 }
 .top-nav {
     background-color: #1e1130;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
+
+.can {
+    float: right;
+    position: relative;
+    /* left: 15em;  when toggle box disapears*/
+    font-size: 0.8em;
+    /* padding: 5px 15px 5px 10px; */
+    box-shadow: 0 0 5px 0;
+    display: none;/*Transition constrol of appearance*/
+}
+
+.can.show {
+    /*Transition constrol of appearance of canada flag*/
+    display: block;
+    position: fixed;
+    left: 90%;
+    top: 9.3%;
+    z-index: 3;
+} 
+.can-flag {
+    padding-right: 10px;
+}
+.can-word {
+    border: none;
+    outline: none;
+    padding: 5px 15px 5px 10px;
+}
+.can-word:hover {
+    color: #ffffff;
+    background-color: #1e1130;
+}
+
 .log-in {
     float: right;
     position: relative;
@@ -55,68 +88,33 @@ Using css variabls, we use double dash to create the variable name and apply the
 .jack-flag, .arrow-dropdown, .country-option {
     cursor: pointer;
 }
-.can {
-    /* float: right; */
-    /* position: relative; */
-    /* left: 15em;  when toggle box disapears*/
-    
-    font-size: 0.8em;
-    /* padding: 5px 15px 5px 10px; */
-    box-shadow: 0 0 5px 0;
-    display: none;/*Transition constrol of appearance*/
-    position: absolute;
-    left: 90%;
-    
-   
-}
-.can.show {
-    /*Transition constrol of appearance of canada flag*/
-    display: block;
-    
-    z-index: 1;
-    
-   
-} 
-.can-flag {
-    padding-right: 10px;
-    
-}
-.can-word {
-    border: none;
-    outline: none;
-    padding: 5px 15px 5px 10px;
-   
-}
-.can-word:hover {
-    color: #ffffff;
-    background-color: #1e1130;
-}
 
 /*drop-navi*/
 .drop-navi {
     height: 80px;
-    
-    
-   
+    position: sticky;
+    width: 100%;
+    background-color: #ffffff;
+    top: 55px;
+    z-index: -1;
 }
 .drop-navi ul {
     display: flex;
     float: right;
-    margin-top: 20px;
     list-style: none;
     font-size: 1.3em;
     position: relative;
-    left: 60px;
+    right: 3% ;
+    z-index: -1;
 }
 .drop-navi li {
     padding-left: 90px;
+    padding-top: 20px;
 }
 /*drop-navi*/
 
 /*input of find property */
-.find-prop {
-    
-}
+
 .area-prop, .submit-prop {
     padding: 10px;
 }
@@ -127,18 +125,13 @@ Using css variabls, we use double dash to create the variable name and apply the
 }
 
 /*input of find property end */
-
-
-
-
-
-
-
-
-
-
-
-
+.show-casepicture {
+    position: relative;
+    z-index: -3;
+    margin-top: 5%;
+    height: 90vh;
+    background-image: url(../img/homefinal.jpg);
+}
 
 /*Hamburger menue - test build*/
 #toggle {
@@ -207,10 +200,7 @@ label.navi-toggle::before {
 /*
 Hamburger menue - test build - end */
 
-.show-casepicture {
-    height: 90vh;
-    background-image: url(../img/homefinal.jpg);
-}
+
 
 
 
