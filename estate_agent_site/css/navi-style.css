@@ -37,6 +37,7 @@ Using css variabls, we use double dash to create the variable name and apply the
 .can {
     float: right;
     position: relative;
+    
     /* left: 15em;  when toggle box disapears*/
     font-size: 0.8em;
     /* padding: 5px 15px 5px 10px; */
@@ -95,9 +96,31 @@ Using css variabls, we use double dash to create the variable name and apply the
     position: sticky;
     width: 100%;
     background-color: #ffffff;
-    top: 55px;
+    top: 52px;
     z-index: 0;
+
+    display: none;
+    /* visibility: hidden; */
 }
+.show-casepicture {
+    position: relative;
+    z-index: -3;
+    /* margin-top: 5%; */
+    height: 90vh;
+    background-image: url(../img/homefinal.jpg);
+}
+
+
+ .drop-navi.see {
+    display: block;
+}
+/* .show-casepicture.move {
+    margin-top: 0;
+}  */
+
+
+
+
 .drop-navi ul {
     display: flex;
     float: right;
@@ -125,13 +148,7 @@ Using css variabls, we use double dash to create the variable name and apply the
 }
 
 /*input of find property end */
-.show-casepicture {
-    position: relative;
-    z-index: -3;
-    margin-top: 5%;
-    height: 90vh;
-    background-image: url(../img/homefinal.jpg);
-}
+
 
 /*Hamburger menue - test build*/
 #toggle {
@@ -199,6 +216,11 @@ label.navi-toggle::before {
 
 /*
 Hamburger menue - test build - end */
+
+.scroll-text {
+    padding: 20px;
+    margin: 30%;
+}
 
 
 
