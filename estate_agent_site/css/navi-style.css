@@ -33,6 +33,10 @@ Using css variabls, we use double dash to create the variable name and apply the
     width: 100%;
     z-index: 1;
 }
+.top-nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .can {
     float: right;
@@ -50,7 +54,7 @@ Using css variabls, we use double dash to create the variable name and apply the
     display: block;
     position: fixed;
     left: 90%;
-    top: 9.3%;
+    top: 9%;
     z-index: 3;
 } 
 .can-flag {
@@ -114,9 +118,7 @@ Using css variabls, we use double dash to create the variable name and apply the
  .drop-navi.see {
     display: block;
 }
-/* .show-casepicture.move {
-    margin-top: 0;
-}  */
+
 
 
 
@@ -134,7 +136,9 @@ Using css variabls, we use double dash to create the variable name and apply the
     padding-left: 90px;
     padding-top: 20px;
 }
-/*drop-navi*/
+
+
+/*drop-navi end*/
 
 /*input of find property */
 
@@ -151,6 +155,12 @@ Using css variabls, we use double dash to create the variable name and apply the
 
 
 /*Hamburger menue - test build*/
+li.xbtn {
+    visibility: hidden;;
+}
+li.xbtn.xbtn-show {
+    visibility: visible;
+}
 #toggle {
     visibility: hidden;
 }
