@@ -1,4 +1,4 @@
-// Country option dropdwon
+// Country option dropdwon function
 const can = document.querySelector('.can');
 const arrow = document.querySelector('.arrow-dropdown');
 const uk = document.querySelector('.country-option');
@@ -15,7 +15,7 @@ function openNav() {
 };
 //////////////////////////////////
 
-// toggle to drop-navi
+// toggle to drop-navi function
 
 const toggle = document.querySelector('.navi-toggle');
 
@@ -33,24 +33,25 @@ function openDropNav() {
 };
 //////////////////////////////////
 
-const xbtn = document.querySelector('.xbtn');
+// Scroll function
 const dropscrollNavi = document.querySelector('.scroll-navi');
 
 window.addEventListener('scroll', function () {
-        // const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        
 
         let scrolled = window.scrollY;
         
         
 
-        if (scrolled >= 400) {
+        if (scrolled > 500) {
+                dropNavi.classList.add('hide-navi');
                 
-                xbtn.classList.toggle('xbtn-show');
-        } 
+        } else if (scrolled < 500)  {
+                dropNavi.classList.remove('hide-navi')
+        }
 
         console.log(scrolled)
 });
-
-
+//////////////////////////////////////
 
 

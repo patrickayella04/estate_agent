@@ -102,10 +102,9 @@ Using css variabls, we use double dash to create the variable name and apply the
     background-color: #ffffff;
     top: 52px;
     z-index: 0;
-
-    display: none;
-    /* visibility: hidden; */
+    /* display: none; */
 }
+
 .show-casepicture {
     position: relative;
     z-index: -3;
@@ -113,16 +112,15 @@ Using css variabls, we use double dash to create the variable name and apply the
     height: 90vh;
     background-image: url(../img/homefinal.jpg);
 }
-
-
+.hide-navi {
+    display: none;
+}
+.show-navi {
+    display: block;
+}
  .drop-navi.see {
     display: block;
 }
-
-
-
-
-
 .drop-navi ul {
     display: flex;
     float: right;
@@ -155,12 +153,7 @@ Using css variabls, we use double dash to create the variable name and apply the
 
 
 /*Hamburger menue - test build*/
-li.xbtn {
-    visibility: hidden;;
-}
-li.xbtn.xbtn-show {
-    visibility: visible;
-}
+
 #toggle {
     visibility: hidden;
 }
@@ -200,8 +193,7 @@ label.navi-toggle::before {
     transform-origin: left top; /* 2. */
     transform:rotateZ(0deg); /* 3. */
 
-    transition: all 0.6s var(--animation-curve)  ;
-    
+    transition: all 0.6s var(--animation-curve); 
 } 
 
 #toggle:checked ~ label.navi-toggle::before { 
@@ -223,7 +215,7 @@ label.navi-toggle::before {
 #toggle ~ label.navi-toggle {
     transition: all 0.5s var(--animation-curve)  ;
 } /*Here we make the initial lable animation disapear faster (0.5s instead of 0.6s) than its pseudo elements*/
-
+ 
 /*
 Hamburger menue - test build - end */
 
@@ -231,14 +223,6 @@ Hamburger menue - test build - end */
     padding: 20px;
     margin: 30%;
 }
-
-
-
-
-
-
-
-
 @media (max-width: 1023px) {
     .top-nav, .can, .drop-navi  {
         display: none;
