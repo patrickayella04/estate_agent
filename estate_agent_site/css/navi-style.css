@@ -37,7 +37,9 @@ Using css variabls, we use double dash to create the variable name and apply the
     text-decoration: none;
     color: #ffffff;
 }
-
+/* .can, .can-flag, .can-word {
+    transition: ;
+} */
 .can {
     float: right;
     position: relative;
@@ -47,10 +49,13 @@ Using css variabls, we use double dash to create the variable name and apply the
     /* padding: 5px 15px 5px 10px; */
     box-shadow: 0 0 5px 0;
     display: none;/*Transition constrol of appearance*/
+    opacity: 0;
+    animation: load 1s forwards;
 }
 
 .can.show {
     /*Transition constrol of appearance of canada flag*/
+
     display: block;
     position: fixed;
     left: 90%;
@@ -102,7 +107,12 @@ Using css variabls, we use double dash to create the variable name and apply the
     background-color: #ffffff;
     top: 52px;
     z-index: 0;
-    /* display: none; */
+    display: block;
+    opacity: 0;
+    animation: load 1s forwards;
+}
+.hide-navi {
+    display: none;
 }
 
 .show-casepicture {
@@ -112,12 +122,22 @@ Using css variabls, we use double dash to create the variable name and apply the
     height: 90vh;
     background-image: url(../img/homefinal.jpg);
 }
-.hide-navi {
+
+li.hamburger {
     display: none;
+    opacity: 0;
+    animation: load 1s forwards;
 }
-.show-navi {
-    display: block;
+li.hamburger.show-ham {
+    display: inline-flex;
 }
+@keyframes load {
+    100%{
+        opacity: 1;
+        
+    }
+}
+
  .drop-navi.see {
     display: block;
 }
