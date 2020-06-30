@@ -50,7 +50,7 @@ Using css variabls, we use double dash to create the variable name and apply the
     box-shadow: 0 0 5px 0;
     display: none;/*Transition constrol of appearance*/
     opacity: 0;
-    animation: load 1s forwards;
+    animation: load 0.2s forwards;
 }
 
 .can.show {
@@ -154,8 +154,6 @@ li.hamburger.show-ham {
     padding-left: 90px;
     padding-top: 20px;
 }
-
-
 /*drop-navi end*/
 
 /*input of find property */
@@ -238,6 +236,38 @@ label.navi-toggle::before {
  
 /*
 Hamburger menue - test build - end */
+
+/*panels start*/
+.tab-panel {
+    display: none;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+/* .tab-panel.active {
+    display:none;
+} */
+.tab-panel.active.see-panel {
+    display: block;
+}
+
+.panel-sections {
+    background-color: #ffffff;
+    border-right: solid 1px black;
+}
+a.tab-control {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+
+/*panels end*/
 
 .scroll-text {
     padding: 20px;

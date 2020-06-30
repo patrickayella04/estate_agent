@@ -6,6 +6,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css\navi-style.css" type="text/css">
     </head>
     <body>
@@ -47,12 +48,14 @@
     
         
         <div class="drop-navi">
-            
-            <ul class="drop-navi-content">
-                <li>Selling</li>
-                <li>Buying</li>
-                <li>Letting</li>
-                <li>Renting</li>
+        
+            <ul class="drop-navi-content tab-list">
+                
+                <li class="active"> <a class="tab-control" href="#tab-1">Selling</a> </li>
+                <li> <a class="tab-control" href="#tab-2">Buying</a> </li>
+                <li> <a class="tab-control" href="#tab-3">Letting</a> </li>
+                <li> <a class="tab-control" href="#tab-4">Renting</a> </li>
+                
                 <li>
                     <form class="find-prop" action="#">
                         <input class="area-prop" type="search" name="search" id="">
@@ -60,7 +63,103 @@
                     </form>
                 </li>
             </ul>
+            <div class="tab-panel active" id="tab-1">
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 1 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul> 
+                </div>  
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li> Panel 1 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div> 
+                <div class="panel-sections">
+                    <ul class="panel-list"> 
+                        <li>Panel 1 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+            </div> 
+
+            <div class="tab-panel" id="tab-2">
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 2 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 2 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+                <!-- <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 2 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div> -->
+            </div>
+            <div class="tab-panel" id="tab-3">
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 3 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 3 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 3 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-panel" id="tab-4">
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 4 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+                <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 4 ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div>
+                <!-- <div class="panel-sections">
+                    <ul class="panel-list">
+                        <li>Panel 4ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ul>
+                </div> -->
+            </div>
+
+
         </div> 
+        
     
 
          <div class="secondary-navi"></div>

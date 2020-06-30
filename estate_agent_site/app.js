@@ -45,9 +45,45 @@ window.addEventListener('scroll', function () {
 });
 //////////////////////////////////////
 
+        $('.tab-list').each(function () {  // Find lists of tabs
+                let $this = $(this); // Store this list
+                let $tab = $this.find('li.active'); // Get the active list item
+                let $link = $tab.find('a'); // Get link from active tab
+                let $panel = $($link.attr('href')); // Get active panel
 
+                $this.on('mouseover', '.tab-control', function (e) { // When click/mouseover on tab
+                        e.preventDefault(); // Prevent link behavior
+                        let $link = $(this); // Store the current link
+                        let id = this.hash; // Get href of clicked tab
 
+                        if (id && !$link.is('.active')) { // If not currently active
+                                $panel.removeClass('active'); // Make panel inactive
+                                $tab.removeClass('active'); // Make tab inactive
+
+                                $panel = $(id).addClass('active'); // Make new panel active
+                                $tab = $link.parent().addClass('active'); // Make new tab active
+                        }
+                });
+        });
+
+        
 //////////////////////////////////////
 
+let panelConstrol = document.querySelector('.tab-control');
+                
+
+let tabPanel = document.querySelector('#tab-1');
+let tabPanelTwo = document.querySelector('#tab-2');
+let tabPanelThree = document.querySelector('#tab-3');
+let tabPanelFour = document.querySelector('#tab-4');
+
+
+panelConstrol.addEventListener('mouseover', showPanel);
+function showPanel() {
+tabPanel.classList.toggle('see-panel');
+tabPanelTwo.classList.toggle('see-panel');
+tabPanelThree.classList.toggle('see-panel');
+tabPanelFour.classList.toggle('see-panel');
+};
 
 
