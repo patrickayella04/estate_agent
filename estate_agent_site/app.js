@@ -16,10 +16,13 @@ function openNav() {
 // toggle to drop-navi function
 
 const toggle = document.querySelector('.navi-toggle');
+// const ham = document.querySelector('.hamburger');
 const dropNavi = document.querySelector('.drop-navi');
 const showPic = document.querySelector('.show-casepicture');
 
 toggle.addEventListener('click', openDropNav);
+
+// ham.addEventListener('click', openDropNav);
 
 showPic.addEventListener('click', openDropNav);
 
@@ -44,7 +47,7 @@ window.addEventListener('scroll', function () {
         }
 });
 //////////////////////////////////////
-
+// Panel function
         $('.tab-list').each(function () {  // Find lists of tabs
                 let $this = $(this); // Store this list
                 let $tab = $this.find('li.active'); // Get the active list item
@@ -70,7 +73,8 @@ window.addEventListener('scroll', function () {
 //////////////////////////////////////
 
 let panelConstrol = document.querySelector('.tab-control');
-                
+
+
 
 let tabPanel = document.querySelector('#tab-1');
 let tabPanelTwo = document.querySelector('#tab-2');
@@ -79,11 +83,14 @@ let tabPanelFour = document.querySelector('#tab-4');
 
 
 panelConstrol.addEventListener('mouseover', showPanel);
+
+
 function showPanel() {
-tabPanel.classList.toggle('see-panel');
-tabPanelTwo.classList.toggle('see-panel');
-tabPanelThree.classList.toggle('see-panel');
-tabPanelFour.classList.toggle('see-panel');
+        tabPanel.classList.toggle('see-panel');
+        tabPanelTwo.classList.toggle('see-panel');
+        tabPanelThree.classList.toggle('see-panel');
+        tabPanelFour.classList.toggle('see-panel');
 };
 
+/////////////////////////////////////////////////////
 

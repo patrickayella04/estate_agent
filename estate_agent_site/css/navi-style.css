@@ -244,9 +244,14 @@ Hamburger menue - test build - end */
     height: 50vh;
     position: relative;
     top: 100%;
-    background-color: #ffffff;
+    background-color: #d3d3d3;
     z-index: -1;
+    
 }
+.tab-panel:nth-child(odd) {
+    background-color: #808080;
+}
+
 
 /* .tab-panel.active {
     display:none;
