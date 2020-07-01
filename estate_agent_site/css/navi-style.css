@@ -246,16 +246,10 @@ Hamburger menue - test build - end */
     top: 100%;
     background-color: #d3d3d3;
     z-index: -1;
-    
 }
 .tab-panel:nth-child(odd) {
     background-color: #808080;
 }
-
-
-/* .tab-panel.active {
-    display:none;
-} */
 .tab-panel.active.see-panel {
     display: block;
 }
@@ -268,15 +262,37 @@ a.tab-control {
     text-decoration: none;
     color: #000000;
 }
-
-
-
-
 /*panels end*/
 
+/*Heading  */
+
+.heading-home {
+    display: flex;
+    align-items: left;
+    justify-content: start;
+    position: relative;
+    top: 20%;
+    font-size: 5em;
+    color: #ffffff;
+    z-index: -3;
+}
 .scroll-text {
     padding: 20px;
-    margin: 30%;
+    margin-top: 5%;
+    z-index: -3;
+    margin-bottom: 40%; /*temp for scrolling purposes*/
+    /* position: relative;
+    bottom: 70px; */
+   
+
+}
+
+.second-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
 }
 @media (max-width: 1023px) {
     .top-nav, .can, .drop-navi  {
