@@ -72,25 +72,30 @@ window.addEventListener('scroll', function () {
         
 //////////////////////////////////////
 
-let panelConstrol = document.querySelector('.tab-control');
+// Hover drop panel menue function 
+
+//Add.active class to each li.tab in html to activate below function 
+
+let panel = document.getElementsByClassName('tab-control');
+
+for (let i = 0; i < panel.length; i++) {
+        let j = i;
+
+        panel[j].addEventListener('mouseover', showPanel)
+};
 
 
-
-let tabPanel = document.querySelector('#tab-1');
-let tabPanelTwo = document.querySelector('#tab-2');
-let tabPanelThree = document.querySelector('#tab-3');
-let tabPanelFour = document.querySelector('#tab-4');
-
-
-panelConstrol.addEventListener('mouseover', showPanel);
+let tabPanel = document.getElementsByClassName('tab-panel')
 
 
 function showPanel() {
-        tabPanel.classList.toggle('see-panel');
-        tabPanelTwo.classList.toggle('see-panel');
-        tabPanelThree.classList.toggle('see-panel');
-        tabPanelFour.classList.toggle('see-panel');
+        
+        for (let i = 0; i < tabPanel.length; i++) {
+                let p = i;
+
+                tabPanel[p].classList.add('see-panel');
+        }
+
 };
 
-/////////////////////////////////////////////////////
 
