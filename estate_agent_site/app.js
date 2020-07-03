@@ -85,7 +85,7 @@ for (let i = 0; i < panel.length; i++) {
 };
 
 
-let tabPanel = document.getElementsByClassName('tab-panel')
+let tabPanel = document.getElementsByClassName('tab-panel');
 
 
 function showPanel() {
@@ -97,5 +97,27 @@ function showPanel() {
         }
 
 };
+
+
+////////////////////////////////////////
+// Remove panel function on mouseout
+
+for (let i = 0; i < tabPanel.length; i++) {
+
+        let p = i;
+
+        tabPanel[p].addEventListener('mouseout', removePanel)
+};
+
+
+function removePanel() {
+
+        for (let i = 0; i < tabPanel.length; i++) {
+                let p = i;
+
+                tabPanel[p].classList.remove('see-panel');
+        }
+
+}
 
 
