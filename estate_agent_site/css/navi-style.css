@@ -284,8 +284,6 @@ a.tab-control {
     margin-bottom: 40%; /*temp for scrolling purposes*/
     /* position: relative;
     bottom: 70px; */
-   
-
 }
 
 .second-head {
@@ -294,6 +292,12 @@ a.tab-control {
     align-items: center;
     text-align: center;
     font-size: 2.5em;
+}
+.content {
+    /* margin-left: 5%; */
+    margin: 10% 0 0 5%;
+    font-size: 2em;
+    
 }
 @media (max-width: 1023px) {
     .top-nav, .can, .drop-navi  {
