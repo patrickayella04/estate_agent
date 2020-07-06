@@ -133,8 +133,18 @@ function removePanel() {
                 let p = i;
                 tabPanel[p].classList.remove('see-panel');
         }
-}
+};
 
+//////////////////////////////////////////////////////////////
 
+// const filter = document.querySelector('area-prop');
+
+// filter.addEventListener('keydown', filterProperty);
+
+// function filterProperty(e) {
+//         const text = e.target.value;
+
+//         console.log(text);
+// };
 
 

@@ -50,7 +50,7 @@ Using css variabls, we use double dash to create the variable name and apply the
     box-shadow: 0 0 5px 0;
     display: none;/*Transition constrol of appearance*/
     opacity: 0;
-    animation: load 0.2s forwards;
+    animation: load 0.4s forwards;
 }
 
 .can.show {
@@ -299,6 +299,89 @@ a.tab-control {
     font-size: 2em;
     
 }
+/*////////////////////////////////*/
+
+div.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr ;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-areas: 
+    "img head"
+    "img loc"
+    "img  cont";
+    position: relative;
+    top: 100px;
+    border: solid 1px #000000;
+    width: 80%;
+    
+    margin:  0 20px 5%;
+
+}
+.card-one {
+    color: purple;
+}
+
+.picofhouse {
+    grid-area: img;
+    
+}
+
+.propertyhead {
+    grid-area: head;
+}
+
+.location {
+    grid-area: loc;
+}
+
+.desproperty {
+    grid-area: cont;
+}
+.prop-two {
+    position: relative;
+    top: 70px;
+    margin-left: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.picofhouse {
+    height: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1023px) {
     .top-nav, .can, .drop-navi  {
         display: none;
