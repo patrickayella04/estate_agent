@@ -343,6 +343,14 @@ div.card {
     margin-left: 2%;
 }
 
+.backgroundpic {
+    background-image: url()
+}
+
+.collection-item {
+    display: none;
+}
+
 
 
 

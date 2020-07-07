@@ -16,7 +16,18 @@ filter.addEventListener('keyup', filterProperty);
 
 function filterProperty(e) {
 
-    const postCode = e.target.value;
+    const postCode = e.target.value.toLowerCase();
+
+    document.querySelectorAll('.collection-item').forEach(function (task) {
+
+        const item = task.firstChild.textContent;
+
+        if (item.toLowerCase().indexOf(postCode) != 1) {
+            task.style.display = 'block';
+        } else {
+            task.style.display = 'none';
+        }
+    })
 
     console.log(postCode);
 };
