@@ -1,41 +1,42 @@
 ////////////////////////////////////////////////////////////
 
-// const filter = document.querySelector('area-prop');
 
-// filter.addEventListener('keydown', filterProperty);
+(function () { // Lives in an IIFE
+    let $imgs = $('#gallery img'); // Get the images
+    let $search = $('#filter-search'); // Get the input element
+    let cache = []; // Create an array called cache
+    let $find = $('#submit-picture');
 
-// function filterProperty(e) {
-//         const text = e.target.value;
+    $imgs.each(function () {
+            cache.push({
+                    element: this,
+                    text: this.alt.trim().toLowerCase()
+            });
+    });
 
-//         console.log(text);
-// };
+    function filter() {
+            let query = this.value.trim().toLowerCase();
 
-const filter = document.querySelector('#info');
+            cache.forEach(function (img) {
+                    let index = 0;
+                    if (query) {
+                            index = img.text.indexOf(query);
+                    }
 
-filter.addEventListener('keyup', filterProperty);
+                    img.element.style.display = index === -1 ? 'none' : '';
+            });
+    }
+    
+    if ('oninput' in $search[0]) {
+            $search.on('input', filter);
+    } else {
+            $search.on('keyup', filter);
+    }
 
-function filterProperty(e) {
+    // if ('click' in $find) {
+    //     $find.on('click', filter);
+    // }
 
-    const postCode = e.target.value.toLowerCase();
+}());
 
-    document.querySelectorAll('.collection-item').forEach(function (task) {
 
-        const item = task.firstChild.textContent;
-
-        if (item.toLowerCase().indexOf(postCode) != 1) {
-            task.style.display = 'block';
-        } else {
-            task.style.display = 'none';
-        }
-    })
-
-    console.log(postCode);
-};
-
-// function hello() {
-//     const p = 'patrick';
-
-//     console.log(p);
-// };
-
-// hello();

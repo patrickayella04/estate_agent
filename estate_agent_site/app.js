@@ -44,7 +44,7 @@ window.addEventListener('scroll', function () {
         } else if (scrolled < 500) {
                 dropNavi.classList.remove('hide-navi');
                 hamburger.classList.remove('show-ham');
-        }
+        } 
 });
 //////////////////////////////////////
 // Panel function
@@ -146,5 +146,4 @@ function removePanel() {
 
 //         console.log(text);
 // };
-
 

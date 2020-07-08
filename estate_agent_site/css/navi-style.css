@@ -301,7 +301,7 @@ a.tab-control {
 }
 /*////////////////////////////////*/
 
-div.card {
+/* div.card {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr ;
     grid-template-rows: 1fr 1fr auto;
@@ -345,14 +345,28 @@ div.card {
 
 .backgroundpic {
     background-image: url()
-}
+} */
 
 .collection-item {
     display: none;
 }
 
+#gallery {
+    margin-top: 100px;
+}
 
+#gallery {
+    height: 80vh;
+   
+}
 
+#gallery img {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    left: 25px;
+    z-index: -1;
+}
 
 
 
