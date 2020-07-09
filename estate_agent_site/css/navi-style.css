@@ -322,6 +322,14 @@ a.tab-control {
 }
 
 
+.properties {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 @media (max-width: 1037px) {
     .top-nav, .can, .drop-navi  {
         display: none;
