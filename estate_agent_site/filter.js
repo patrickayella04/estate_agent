@@ -5,7 +5,7 @@
     let $imgs = $('#gallery img'); // Get the images
     let $search = $('#filter-search'); // Get the input element
     let cache = []; // Create an array called cache
-    let $find = $('#submit-picture');
+//     let $find = $('#submit-picture');
 
     $imgs.each(function () {
             cache.push({
@@ -33,10 +33,6 @@
             $search.on('keyup', filter);
     }
 
-    // if ('click' in $find) {
-    //     $find.on('click', filter);
-    // }
 
 }());
-
 

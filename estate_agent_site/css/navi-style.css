@@ -119,7 +119,7 @@ Using css variabls, we use double dash to create the variable name and apply the
     position: relative;
     z-index: -3;
     /* margin-top: 5%; */
-    height: 90vh;
+    height: 100vh;
     background-image: url(../img/homefinal.jpg);
 }
 
@@ -152,7 +152,7 @@ li.hamburger.show-ham {
 }
 .drop-navi li {
     padding-left: 90px;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 /*drop-navi end*/
 

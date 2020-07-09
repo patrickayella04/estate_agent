@@ -38,10 +38,10 @@ const hamburger = document.querySelector('li.hamburger');
 window.addEventListener('scroll', function () {
         let scrolled = window.scrollY;
 
-        if (scrolled > 500) {
+        if (scrolled < 500) {
                 dropNavi.classList.add('hide-navi');
                 hamburger.classList.add('show-ham');
-        } else if (scrolled < 500) {
+        } else if (scrolled > 500) {
                 dropNavi.classList.remove('hide-navi');
                 hamburger.classList.remove('show-ham');
         } 
