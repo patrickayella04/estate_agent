@@ -301,110 +301,28 @@ a.tab-control {
 }
 /*////////////////////////////////*/
 
-/* div.card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr ;
-    grid-template-rows: 1fr 1fr auto;
-    grid-template-areas: 
-    "img head"
-    "img loc"
-    "img  cont";
-    position: relative;
-    top: 100px;
-    border: solid 1px #000000;
-    width: 80%;
-    
-    margin:  0 20px 5%;
-
-}
-.card-one {
-    color: purple;
-}
-
-.picofhouse {
-    grid-area: img;
-    
-}
-
-.propertyhead {
-    grid-area: head;
-}
-
-.location {
-    grid-area: loc;
-}
-
-.desproperty {
-    grid-area: cont;
-}
-.prop-two {
-    position: relative;
-    top: 70px;
-    margin-left: 2%;
-}
-
-.backgroundpic {
-    background-image: url()
-} */
-
 .collection-item {
     display: none;
 }
 
 #gallery {
-    margin-top: 100px;
-}
-
-#gallery {
-    height: 80vh;
-   
+    margin-top: 10px;
 }
 
 #gallery img {
-    width: 300px;
+    width: 308px;
     height: 150px;
     position: relative;
-    left: 25px;
+    left: 10px;
     z-index: -1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .picofhouse {
     height: 30%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1023px) {
+@media (max-width: 1037px) {
     .top-nav, .can, .drop-navi  {
         display: none;
     }
@@ -419,7 +337,7 @@ a.tab-control {
     }
 
 }
-@media (max-width: 1130px) {
+@media (max-width: 1150px) {
     .top-nav-content li {
         padding: 15px 10px 15px 20px;
         font-size: 0.8em;

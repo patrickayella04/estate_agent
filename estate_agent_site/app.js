@@ -100,26 +100,7 @@ function showPanel() {
 
 
 ////////////////////////////////////////
-// Remove panel function on mouseout
 
-// for (let i = 0; i < tabPanel.length; i++) {
-
-//         let p = i;
-
-//         tabPanel[p].addEventListener('mouseout', removePanel)
-// };
-
-
-
-// function removePanel() {
-
-//         for (let i = 0; i < tabPanel.length; i++) {
-//                 let p = i;
-
-//                 tabPanel[p].classList.remove('see-panel');
-//         }
-
-// }
 let outSide = document.getElementsByTagName('div');
 
 for (let i = 0; i < outSide.length; i++) {
@@ -137,13 +118,5 @@ function removePanel() {
 
 //////////////////////////////////////////////////////////////
 
-// const filter = document.querySelector('area-prop');
 
-// filter.addEventListener('keydown', filterProperty);
-
-// function filterProperty(e) {
-//         const text = e.target.value;
-
-//         console.log(text);
-// };
 
