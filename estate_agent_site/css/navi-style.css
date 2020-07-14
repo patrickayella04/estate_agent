@@ -364,3 +364,21 @@ a.tab-control {
 }
 
 
+/*///////////////////////////////////////////////////////////////
+Search Page 
+*/
+
+.find {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #5c025c;
+    color: #ffffff;
+    height: 60px;
+
+}
+.find li {
+    margin-left: 8%;
+
+
+}
