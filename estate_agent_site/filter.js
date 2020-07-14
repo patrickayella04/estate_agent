@@ -6,7 +6,7 @@
     let $search = $('#filter-search'); // Get the input element
     let cache = []; // Create an array called cache
 //     let $find = $('#submit-picture');
-
+ 
     $imgs.each(function () {
             cache.push({
                     element: this,

@@ -3,7 +3,7 @@
 // I've selected the element I want to click on which is  const arrow. I used querySelector as that pick up the first element with that class name of '.can'.
 
 const can = document.querySelector('.can');
-
+ 
 const arrow = document.querySelector('.arrow-dropdown');
 
 //  We creat the event listener and include the function.

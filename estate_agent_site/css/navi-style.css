@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0; 
+    margin: 0;  
 }
 .container {
     width: 100%;
@@ -363,4 +363,25 @@ a.tab-control {
     
 }
 
+
+/*///////////////////////////////////////////////////////////////
+
+Search Page 
+
+*/
+
+.find {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #5c025c;
+    color: #ffffff;
+    height: 60px;
+
+}
+.find li {
+    margin-left: 8%;
+    
+    
+}
 
