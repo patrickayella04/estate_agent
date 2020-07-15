@@ -372,13 +372,48 @@ Search Page
     display: flex;
     align-items: center;
     list-style: none;
-    background-color: #5c025c;
+    background-color: #471247;
     color: #ffffff;
     height: 60px;
 
 }
 .find li {
     margin-left: 8%;
-
-
 }
+.find a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hover-underline:link::before {
+    content: '';
+    position: absolute;
+    width: 4%;
+    height: 2px;
+    bottom: 535px;
+    visibility: hidden;
+
+    background-color: rgb(255, 255, 255);
+    transform: scale(1);
+    
+    transition: ease-in 300ms;
+}
+.hover-underline:link:hover::before {
+    transform: scale(1);
+    
+    background-color: #f37085;
+    visibility: visible;
+}
+
+.selling-list {
+    list-style: none;
+    text-decoration: none;
+    background-color: #471247;
+    width: 20%;
+    position: relative;
+    left: 15%;
+}
+.selling-list li {
+    color: #ffffff;
+}
+
