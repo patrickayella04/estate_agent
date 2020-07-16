@@ -1,36 +1,89 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css\navi-style.css" type="text/css">
     </head>
     <body>
         <nav>
-            <div class="second-navi">
-                <ul class="find">
-                    <li class="ham-burger-open"></li>
-                    <li>Selling</li>
-                    <li>Buying</li>
-                    <li>Letting</li>
-                    <li>Renting</li>
-                    <li>Book Viewing</li>
-                    <li>Log in</li>
+            <div class="second-navi"> 
+                <ul class="find ">
+                    <li class="ham-burger-open">
+                        <input type="checkbox" name="" id="toggle-2">
+                            <label class="navi-toggle-2" for="toggle-2"></label>
+                    </li>
+
+                    <li id= "selling-select" ><a class="hover-underline"  href="#tab--1">Selling</a></li>
+
+
+                    <li id= "buying-select"> <a class="hover-underline" href="#tab--2">Buying</a> </li>
+
+                    <li  id="letting-select"> <a class="hover-underline" href="#tab--3">Letting</a> </li>
+
+                    <li  id="renting-select"> <a class="hover-underline" href="#tab--4">Renting</a> </li>
+
+
+                    <li> <a href="">Book Viewing</a> </li>
+                    <li> <a  href="">Log in</a> </li>
                     <li class="small-country"></li>
                 </ul>
             </div>
         </nav>
 
-        <section class="input-needs-landing">
-            
-        </section>
-        
-        <script src="" async defer></script>
+        <div class="selling-options" id="tab--1">
+            <ul class="selling-list">
+                <li> <a class="selling-options" href="#">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+            </ul>
+        </div>
+
+        <div class="selling-options" id="tab--2">
+            <ul class="selling-list buying-list">
+                <li> <a class="selling-options" href="#">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+            </ul>
+        </div>
+
+        <div class="selling-options" id="tab--3">
+            <ul class="selling-list letting-list">
+                <li> <a class="selling-options" href="#">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+               
+            </ul>
+        </div>
+
+        <div class="selling-options" id="tab--3">
+            <ul class="selling-list renting-list">
+                <li> <a class="selling-options" href="#">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+                <li> <a class="selling-options" href="">lakdfjlks sldfls;ka ;alksfdjl</a> </li>
+            </ul>
+        </div>
+
+
+        <section class="input-needs-landing"></section>
+
+        <script src="drop.js" async defer></script>
     </body>
-</html>
+</html> 
